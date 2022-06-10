@@ -166,3 +166,47 @@ function buttonDisabled() {
         }
     }, 1000);
 }
+
+/*
+Feature: Scroll Event (Navbar and About)
+Set the event function according to the Y scroll position
+*/
+
+const navbar = document.getElementById('navbar');
+const navbarImg = document.querySelector('#navbar img');
+const aboutImage = document.getElementsByClassName('about__image');
+const aboutImageBox = document.getElementsByClassName('about__image-box');
+const aboutText = document.getElementsByClassName('about__text');
+
+window.addEventListener('scroll', function() {
+    let docElem = document.documentElement;
+    let scrollPos = docElem.scrollTop;
+
+    // Navbar becomes sticky and follows the screen
+    if (scrollPos > 20) {
+        navbar.classList.add('nav--sticky');
+        navbarImg.style.width = '4rem';
+    } else {
+        navbar.classList.remove('nav--sticky');
+        navbarImg.style.width = '5rem';
+    }
+
+    // The picture in About moves in 3D with the mouse position
+    let CalcPos = scrollPos * .015;
+    let CalcPos2 = scrollPos * -.015;
+
+    if (scrollPos < 1500) {
+        aboutImage[0].style.transform = `rotateY(20deg) rotateX(${CalcPos - 8}deg)`;
+        aboutImage[1].style.transform = `rotateY(-10deg) rotateX(${CalcPos2 + 20}deg)`;
+    }
+});
+
+// When user clicks on a photo in about section, set the toggle to hide the text and resize the photo
+for (let i = 0; i < aboutImage.length; i++) {
+    ((i) => {
+        aboutImage[i].onclick = () => {
+            aboutImageBox[i].classList.toggle('about__image-box--active');
+            aboutText[i].classList.toggle('about__text--animation');
+        }
+    })(i);
+}
