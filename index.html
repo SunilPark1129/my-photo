@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
     <title>myPhoto</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <!-- navbar -->
+    <!----------------------------- navbar ---------------------------------->
     <header id="navbar">
         <a href="#"><img src="images/mainlogo.png" alt="logo"></a>
         <ul>
@@ -23,6 +25,59 @@
             </li>
         </ul>
     </header>
+
+    <main class="wrapper">
+        <!-------------------------- slideshow ------------------------------>
+        <div id="slideshow">
+            <div class="slideshow__content">
+                <div class="slideshow__image">
+                    <div class="slideshow__text">
+                        <h2>Record your beauty as a memory</h2>
+                        <p>MyPhoto will be with you</p>
+                    </div>
+                </div>
+                <div class="slideshow__image">
+                    <div class="slideshow__text">
+                        <h2>Precious photos tailored to your needs</h2>
+                        <p>We provide many services to satisfy our customers</p>
+                        <a href="service.html">
+                            <div class="slideshow__link-box">
+                                See More
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slideshow__image">
+                    <div class="slideshow__text">
+                        <h2>Hands of talented professionals</h2>
+                        <p>We have prepared competent experts</p>
+                    </div>
+                </div>
+                <div class="slideshow__image">
+                    <div class="slideshow__text">
+                        <h2>We are here for you</h2>
+                        <p>Please contact us if have any inquiries or questions</p>
+                        <a href="contact.html">
+                            <div class="slideshow__link-box">
+                                Contact Us
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slideshow__dot-box">
+                    <button class="slideshow__dot"></button>
+                    <button class="slideshow__dot"></button>
+                    <button class="slideshow__dot"></button>
+                    <button class="slideshow__dot"></button>
+                </div>
+                <button class="slideshow__button slideshow__button--prev">&lt;</button>
+                <button class="slideshow__button slideshow__button--next">&gt;</button>
+            </div>
+        </div>
+
+    </main>
+
     <script src="scripts/home.js"></script>
 </body>
+
 </html>
