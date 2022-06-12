@@ -87,3 +87,25 @@ emailForm.addEventListener('input', () => {
     }
     emailConfirmBtn.disabled = isValid;
 })
+
+/*
+Feature: Date Checker
+Adding a function to check if the store is open with a check mark
+*/
+
+const checkMark = document.getElementsByClassName('check-mark');
+
+weekdayCalculate();
+
+function weekdayCalculate() {
+    let d = new Date();
+    let n = d.getDay();
+    if (n == 0) {
+        checkMark[2].style.display = 'inline-block';
+    } else if (n > 0 && n < 6) {
+        checkMark[0].style.display = 'inline-block';
+    } else if (n == 6) {
+        checkMark[1].style.display = 'inline-block';
+    }
+
+}
