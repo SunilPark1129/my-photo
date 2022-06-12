@@ -590,6 +590,295 @@ footer a:hover {
     flex: 1 1 50%;
 }
 
+
+/* photo-shoots styling starts here */
+
+.photo-shoots__image-box {
+    display: flex;
+    width: 100%;
+}
+
+.photo-shoots__image-box img {
+    flex: 1 1 30%;
+    object-fit: cover;
+    object-position: 50% 30%;
+    width: 30%;
+    height: 25em;
+}
+
+.text-box ol {
+    display: flex;
+    flex-direction: column;
+    color: var(--clr-bold);
+    gap: 3rem;
+    list-style-position: outside;
+    font-size: 2.5em;
+}
+
+.text-box ol p {
+    color: #ddd;
+    line-height: 2em;
+    font-size: 0.5em;
+}
+
+
+/* final-edit starts here */
+
+.final-edit__photoshop-box {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.final-edit__image-box {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: 100%;
+    height: 30em;
+    flex: 1 1 50%;
+}
+
+.final-edit__image-box::after {
+    position: absolute;
+    content: "click the image to zoom in/out";
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 0.5rem;
+    bottom: 1rem;
+    right: 0;
+    background-color: rgba(187, 108, 108, 0.616);
+    font-size: 1.3em;
+}
+
+.final-edit__image {
+    background-image: url("../images/edit_bird.jpg");
+    background-position: 50% 20%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition-property: filter, background-position, transform;
+    transition-duration: 1s, 1s, 0.5s;
+}
+
+.final-edit__image--overlap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: 50% 20%;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: hue;
+    opacity: 0;
+    transition-property: opacity, background-position, transform;
+    transition-duration: 1s, 1s, 0.5s;
+}
+
+.final-edit__image-zoom {
+    background-position: 50% 20%;
+    transform: scale(1.5);
+}
+
+.final-edit__option-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.final-edit__option-box h1 {
+    color: var(--clr-bold);
+    font-size: 1.8em;
+}
+
+.final-edit__flex-box {
+    display: flex;
+    position: relative;
+    transition-property: transform;
+    transition-duration: 1s;
+    height: 3rem;
+}
+
+.final-edit__dots {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 1.5em;
+    cursor: pointer;
+    transition-property: left, transform;
+    transition-duration: 1s;
+}
+
+.final-edit__dots:nth-child(1) {
+    background-color: #48a7e2;
+}
+
+.final-edit__dots:nth-child(2) {
+    background-color: #b93fa9;
+}
+
+.final-edit__dots:nth-child(3) {
+    background-color: #6f8927;
+}
+
+.final-edit__button {
+    position: relative;
+    cursor: pointer;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 6em;
+    height: 3em;
+    font-size: 1.3em;
+}
+
+.final-edit__switch__on {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -50%;
+    transform: rotateY(90deg);
+    background-color: var(--clr-light);
+    transition-property: transform, left;
+    transition-duration: 1s;
+}
+
+.final-edit__switch__off {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: rotateY(0);
+    background-color: var(--clr-heavy);
+    transition-property: transform, left;
+    transition-duration: 1s;
+}
+
+.final-edit__switch--on {
+    transform: rotateY(0);
+    left: 0;
+}
+
+.final-edit__switch--off {
+    transform: rotateY(90deg);
+    left: 50%;
+}
+
+.final-edit__image--filter {
+    filter: contrast(150%);
+}
+
+
+/* opverlaps the image on the final-edit__image */
+
+.final-edit__image--overlap:nth-child(2) {
+    background-image: url("../images/edit_bird_red.svg");
+}
+
+.final-edit__image--overlap:nth-child(3) {
+    background-image: url("../images/edit_bird_green.svg");
+}
+
+
+/* makes the applied photo transparent and the new photo opaque */
+
+.final-edit__image--fade {
+    opacity: 1;
+}
+
+
+/* expert styling starts here */
+
+.expert__button {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    width: 8rem;
+    font-size: 1.2em;
+    border: 1px solid var(--clr-bold);
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.expert__button:hover {
+    background-color: var(--clr-bold);
+    color: black;
+}
+
+
+/* side-navbar styling starts here */
+
+.side-nav {
+    position: fixed;
+    right: -10rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    transition: right 1s ease-in-out;
+    z-index: 999;
+    font-size: 1rem;
+}
+
+
+/* side-navbar close button */
+
+.side-nav__close {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(51, 51, 51, 0.884);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    color: #ddd;
+    cursor: pointer;
+    font-size: 0.7em;
+}
+
+.side-nav--active {
+    right: 0;
+}
+
+.side-nav ul {
+    list-style: none;
+    text-align: center;
+    font-size: 1em;
+}
+
+.side-nav li {
+    color: #ddd;
+    background-color: rgba(51, 51, 51, 0.884);
+    padding: 1rem 1rem;
+}
+
+.side-nav ul a:first-child li {
+    border-top-left-radius: 1.5rem;
+}
+
+.side-nav ul a:last-child li {
+    border-bottom-left-radius: 1.5rem;
+}
+
 @media only screen and (max-width: 1400px) {
     section {
         padding: 0;
@@ -679,5 +968,15 @@ footer a:hover {
     .about__image-box--active {
         width: 100%;
         height: 15rem;
+    }
+    .final-edit__photoshop-box {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+    .final-edit__image-box {
+        flex: 1 1 100%;
+    }
+    .final-edit__option-box {
+        gap: 1rem;
     }
 }
