@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myPhoto</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_xlk8toMHrTQu6GPudtyGI");
+        })();
+    </script>
+</head>
+
+<body>
+    <header id="navbar" class="nav--sticky">
+        <a href="#"><img src="images/mainlogo.png" alt="logo"></a>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="service.html">Service</a>
+            </li>
+            <li>
+                <a class="navbar__current-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </header>
+
+    <main class="wrapper">
+        <div class="navbar-padding"></div>
+        <!---------------------- contact ------------------------->
+        <section id="contact">
+            <div class="title-box">
+                <div class="title">Contact</div>
+                <div class="title-sub">Send us your Email</div>
+            </div>
+            <div class="content">
+                <form id="email__form" action="#" onsubmit="sendMail();return false">
+                    <div class="contact__label">
+                        <div class="contact__input contact__input--name">
+                            <label for="firstName">Name</label>
+                            <input type="text" placeholder="Your Name here.." id="firstName" name="firstName" autocomplete="off" required>
+                            <span>&#9888;</span>
+                            <span>&#10004;</span>
+                        </div>
+                        <div class="contact__input contact__input--email">
+
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="Your Email here.." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email" name="email" autocomplete="off" required>
+                            <span>&#9888;</span>
+                            <span>&#10004;</span>
+                        </div>
+                    </div>
+                    <div class="contact__textarea">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" autocomplete="off" required></textarea>
+                        <span>&#9888;</span>
+                        <span>&#10004;</span>
+                    </div>
+                    <button type="submit" id="confirm" class="contact__button" disabled="true">Submit</button>
+                    <div class="status success">Email has been sent successfully!</div>
+                    <div class="status error">Error: sending of message failed</div>
+                    <div class="status loading">Sending an email...</div>
+                </form>
+            </div>
+        </section>
+        <!------------------------------- location ------------------------------>
+        <section id="location">
+            <div class="title-box">
+                <div class="title">Location</div>
+                <div class="title-sub">We are here for you</div>
+            </div>
+            <div class="content">
+                <div class="location__map">
+                    <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d49077.57539357632!2d-75.126193!3d39.754284!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6d0cb42b31e77%3A0xafc57ca51b63fc37!2s544%20Church%20Rd%2C%20Sewell%2C%20NJ%2008080!5e0!3m2!1sen!2sus!4v1625596992370!5m2!1sen!2sus"></iframe>
+                </div>
+                <div class="text-box">
+                    <div>
+                        <h2>
+                            Our location
+                        </h2>
+                        <p>
+                            544 Church Rd Sewell, NJ 08080
+                            <a href="https://goo.gl/maps/fc39NMQUswM8SePK6">
+                                <i>&#10150;</i>
+                            </a>
+                        </p>
+                        <h2>
+                            Business Hours
+                        </h2>
+                        <p>
+                            Monday - Friday 7AM - 7PM <i class="check-mark">&#x2713;</i>
+                        </p>
+                        <p>
+                            Saturday 8AM - 4PM <i class="check-mark">&#x2713;</i>
+                        </p>
+                        <p>
+                            Sunday Closed <i class="check-mark">&#x2713;</i>
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Phone</h2>
+                        <p>(111) 111-1111</p>
+                        <h2>
+                            Parking
+                        </h2>
+                        <p>
+                            Parking lot is provided
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__content">
+            <div class="footer__copyright">&copy; COPYRIGHT MYPHOTO DEPTFORD NJ - 2021</div>
+            <div class="footer__links-box">
+                <div class="footer__links">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#about">About Us</a>
+                    <a href="#works">Works</a>
+                    <a href="index.html#info">Information</a>
+                </div>
+                <div class="footer__links">
+                    <a href="service.html">Services</a>
+                    <a href="service.html#photo-shoots">Photo Info</a>
+                    <a href="service.html#photo-size">Pricing Info</a>
+                    <a href="service.html#final-edit">Final Edit</a>
+                    <a href="service.html#expert">Expert</a>
+                </div>
+                <div class="footer__links">
+                    <a href="#">Contact</a>
+                    <a href="#contact">E-mail Us</a>
+                    <a href="#location">Location</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/contact.js"></script>
+</body>
+
+</html>
