@@ -805,7 +805,6 @@ footer a:hover {
     margin: auto;
     align-items: center;
     justify-content: center;
-    padding: 2em;
     width: 8rem;
     font-size: 1.2em;
     border: 1px solid var(--clr-bold);
@@ -814,6 +813,10 @@ footer a:hover {
     transition-property: background-color, color;
     transition-duration: 0.3s;
     cursor: pointer;
+}
+
+.expert__button a {
+    padding: 2em;
 }
 
 .expert__button:hover {
