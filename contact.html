@@ -7,10 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myPhoto</title>
     <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_xlk8toMHrTQu6GPudtyGI");
+        })();
+    </script>
 </head>
 
 <body>
-
     <header id="navbar" class="nav--sticky">
         <a href="#"><img src="images/mainlogo.png" alt="logo"></a>
         <ul>
@@ -27,7 +32,6 @@
     </header>
 
     <main class="wrapper">
-
         <div class="navbar-padding"></div>
         <!---------------------- contact ------------------------->
         <section id="contact">
@@ -36,7 +40,7 @@
                 <div class="title-sub">Send us your Email</div>
             </div>
             <div class="content">
-                <form id="email__form" action="#" onsubmit="">
+                <form id="email__form" action="#" onsubmit="sendMail();return false">
                     <div class="contact__label">
                         <div class="contact__input contact__input--name">
                             <label for="firstName">Name</label>
