@@ -1252,6 +1252,9 @@ p i {
     #works .text-box {
         flex: 1 1 100%;
     }
+    #info .content {
+        flex-direction: column;
+    }
     #location .text-box {
         flex-direction: column;
     }
