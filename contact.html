@@ -11,7 +11,7 @@
 
 <body>
 
-    <header id="navbar">
+    <header id="navbar" class="nav--sticky">
         <a href="#"><img src="images/mainlogo.png" alt="logo"></a>
         <ul>
             <li>
@@ -25,6 +25,47 @@
             </li>
         </ul>
     </header>
+
+    <main class="wrapper">
+
+        <div class="navbar-padding"></div>
+        <!---------------------- contact ------------------------->
+        <section id="contact">
+            <div class="title-box">
+                <div class="title">Contact</div>
+                <div class="title-sub">Send us your Email</div>
+            </div>
+            <div class="content">
+                <form id="email__form" action="#" onsubmit="">
+                    <div class="contact__label">
+                        <div class="contact__input contact__input--name">
+                            <label for="firstName">Name</label>
+                            <input type="text" placeholder="Your Name here.." id="firstName" name="firstName" autocomplete="off" required>
+                            <span>&#9888;</span>
+                            <span>&#10004;</span>
+                        </div>
+                        <div class="contact__input contact__input--email">
+
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="Your Email here.." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email" name="email" autocomplete="off" required>
+                            <span>&#9888;</span>
+                            <span>&#10004;</span>
+                        </div>
+                    </div>
+                    <div class="contact__textarea">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" autocomplete="off" required></textarea>
+                        <span>&#9888;</span>
+                        <span>&#10004;</span>
+                    </div>
+                    <button type="submit" id="confirm" class="contact__button" disabled="true">Submit</button>
+                    <div class="status success">Email has been sent successfully!</div>
+                    <div class="status error">Error: sending of message failed</div>
+                    <div class="status loading">Sending an email...</div>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="footer__content">
