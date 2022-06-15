@@ -1,11 +1,9 @@
-# My Photo 
+# My Photo
+![aside menu - Copy](https://user-images.githubusercontent.com/106734133/173830526-06d78bf5-2260-4d3e-a1e4-0a44be03577b.jpg)
 Check preview website - [Link](https://sunilpark1129.github.io/my-photo/)
 ### Project Description
 This is the website of My Photo, a shop that takes pictures to make memories. On this website you can find out what the store has to offer, prices and contact information.
-
-<!-- ![slideshow](https://user-images.githubusercontent.com/106734133/173249078-89dc6357-49bb-46dd-9ecf-aedb31601ff9.jpg) -->
-
-### Features / Usage
+### Features
 |Feature|Description|
 |:--:|:--:|
 |Slideshow|<img src="https://user-images.githubusercontent.com/106734133/173249078-89dc6357-49bb-46dd-9ecf-aedb31601ff9.jpg" width="500" ><br>When you get to index 4 of the slide, right-clicking will go to the right and you will arrive at index 1 slide with animation effect. Along with this function, it is possible to move the slide by clicking the dots as well.|
