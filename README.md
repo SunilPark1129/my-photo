@@ -25,4 +25,3 @@ git clone https://github.com/SunilPark1129/my-photo.git
 - I felt my knowledge on github was lacking. The branch I used only created a temporary branch, made a pull request to the main branch, and deleted the temporary branch. - I'll try to make a pull request using more diverse branches.
 ## Project Status
 Completed
->>>>>>> c2f2127f970e27e2502fbd6110e4fbd35a3fb770
