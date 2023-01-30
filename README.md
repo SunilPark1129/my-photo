@@ -18,7 +18,6 @@ This is the website of My Photo, a shop that takes pictures to make memories. On
 ```
 git clone https://github.com/SunilPark1129/my-photo.git
 ```
-<<<<<<< HEAD
 ### Contributor
 =======
 ## That can be improved
