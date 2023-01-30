@@ -22,3 +22,4 @@ I felt my knowledge on github was lacking. The branch I used only created a temp
 ```
 git clone https://github.com/SunilPark1129/my-photo.git
 ```
+### Contributor
