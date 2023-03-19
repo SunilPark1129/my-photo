@@ -10,106 +10,114 @@
 </head>
 
 <body>
-    <header id="navbar" class="nav--sticky">
-        <a href="#"><img src="images/mainlogo.png" alt="logo"></a>
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="service.html">Service</a>
-            </li>
-            <li>
-                <a class="navbar__current-link" href="#">Contact</a>
-            </li>
-        </ul>
+    <header id="navbar">
+        <div class="wrapper">
+            <a href="#"><img src="images/mainlogo.png" alt="logo"></a>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="service.html">Service</a>
+                </li>
+                <li>
+                    <a class="navbar__current-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
     </header>
 
-    <main class="wrapper">
+    <main>
         <div class="navbar-padding"></div>
-        <!---------------------- contact ------------------------->
-        <section id="contact">
-            <div class="title-box">
-                <h1 class="title">Contact</h1>
-                <p class="title-sub">Send us your Email</p>
-            </div>
-            <div class="content">
-                <form id="email__form" action="#" onsubmit="sendMail();return false">
-                    <div class="contact__label">
-                        <div class="contact__input contact__input--name">
-                            <label for="firstName">Name</label>
-                            <input type="text" placeholder="Your Name here.." id="firstName" name="firstName" autocomplete="off" required>
-                            <span>&#9888;</span>
-                            <span>&#10004;</span>
-                        </div>
-                        <div class="contact__input contact__input--email">
+        <div class="wrapper">
+            <!---------------------- contact ------------------------->
+            <article id="contact">
+                <header class="title-box">
+                    <h1 class="title">Contact</h1>
+                    <p class="title-sub">Send us your Email</p>
+                </header>
+                <div class="content">
+                    <form id="email__form" action="#" onsubmit="sendMail();return false">
+                        <div class="contact__label">
+                            <div class="contact__input contact__input--name">
+                                <label for="firstName">Name</label>
+                                <input type="text" placeholder="Your Name here.." id="firstName" name="firstName" autocomplete="off" required>
+                                <span>&#9888;</span>
+                                <span>&#10004;</span>
+                            </div>
+                            <div class="contact__input contact__input--email">
 
-                            <label for="email">Email</label>
-                            <input type="email" placeholder="Your Email here.." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email" name="email" autocomplete="off" required>
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="Your Email here.." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email" name="email" autocomplete="off" required>
+                                <span>&#9888;</span>
+                                <span>&#10004;</span>
+                            </div>
+                        </div>
+                        <div class="contact__textarea">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" autocomplete="off" required></textarea>
                             <span>&#9888;</span>
                             <span>&#10004;</span>
                         </div>
-                    </div>
-                    <div class="contact__textarea">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" autocomplete="off" required></textarea>
-                        <span>&#9888;</span>
-                        <span>&#10004;</span>
-                    </div>
-                    <button type="submit" id="confirm" class="contact__button" disabled="true">Submit</button>
-                    <div class="status success">Email has been sent successfully!</div>
-                    <div class="status error">Error: sending of message failed</div>
-                    <div class="status loading">Sending an email...</div>
-                </form>
-            </div>
-        </section>
-        <!------------------------------- location ------------------------------>
-        <section id="location">
-            <div class="title-box">
-                <h1 class="title">Location</h1>
-                <p class="title-sub">We are here for you</p>
-            </div>
-            <div class="content">
-                <div class="location__map">
-                    <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d49077.57539357632!2d-75.126193!3d39.754284!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6d0cb42b31e77%3A0xafc57ca51b63fc37!2s544%20Church%20Rd%2C%20Sewell%2C%20NJ%2008080!5e0!3m2!1sen!2sus!4v1625596992370!5m2!1sen!2sus"></iframe>
+                        <button type="submit" id="confirm" class="contact__button" disabled="true">Submit</button>
+                    </form>
                 </div>
-                <div class="text-box">
-                    <div>
-                        <h2>
-                            Our location
-                        </h2>
-                        <p>
-                            544 Church Rd Sewell, NJ 08080
-                            <a href="https://goo.gl/maps/fc39NMQUswM8SePK6">
-                                <i>&#10150;</i>
-                            </a>
-                        </p>
-                        <h2>
-                            Business Hours
-                        </h2>
-                        <p>
-                            Monday - Friday 7AM - 7PM <i class="check-mark">&#x2713;</i>
-                        </p>
-                        <p>
-                            Saturday 8AM - 4PM <i class="check-mark">&#x2713;</i>
-                        </p>
-                        <p>
-                            Sunday Closed <i class="check-mark">&#x2713;</i>
-                        </p>
+            </article>
+            <!------------------------------- location ------------------------------>
+            <article id="location">
+                <header class="title-box">
+                    <h1 class="title">Location</h1>
+                    <p class="title-sub">We are here for you</p>
+                </header>
+                <div class="content">
+                    <div class="location__map">
+                        <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d49077.57539357632!2d-75.126193!3d39.754284!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6d0cb42b31e77%3A0xafc57ca51b63fc37!2s544%20Church%20Rd%2C%20Sewell%2C%20NJ%2008080!5e0!3m2!1sen!2sus!4v1625596992370!5m2!1sen!2sus"></iframe>
                     </div>
-                    <div>
-                        <h2>Phone</h2>
-                        <p>(111) 111-1111</p>
-                        <h2>
-                            Parking
-                        </h2>
-                        <p>
-                            Parking lot is provided
-                        </p>
+                    <div class="text-box">
+                        <section>
+                            <h2>
+                                Our location
+                            </h2>
+                            <p>
+                                544 Church Rd Sewell, NJ 08080
+                                <a href="https://goo.gl/maps/fc39NMQUswM8SePK6">
+                                    <i>&#10150;</i>
+                                </a>
+                            </p>
+                        </section>
+                        <section>
+                            <h2>
+                                Business Hours
+                            </h2>
+                            <p>
+                                Monday - Friday 7AM - 7PM <i class="check-mark">&#x2713;</i>
+                            </p>
+                            <p>
+                                Saturday 8AM - 4PM <i class="check-mark">&#x2713;</i>
+                            </p>
+                            <p>
+                                Sunday Closed <i class="check-mark">&#x2713;</i>
+                            </p>
+                        </section>
+                    </div>
+                    <div class="text-box">
+                        <section>
+                            <h2>Phone</h2>
+                            <p>(111) 111-1111</p>
+                        </section>
+                        <section>
+                            <h2>
+                                Parking
+                            </h2>
+                            <p>
+                                Parking lot is provided
+                            </p>
+                        </section>
                     </div>
                 </div>
-            </div>
-        </section>
+        </div>
+        </article>
+        </div>
     </main>
 
     <footer>
