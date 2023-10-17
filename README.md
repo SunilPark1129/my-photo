@@ -6,7 +6,7 @@ My Photo website is where photography experts capture your unforgettable moments
 ## Features
 |Feature|Description|
 |:--:|:--:|
-|Slideshow|<img src="https://user-images.githubusercontent.com/106734133/173249078-89dc6357-49bb-46dd-9ecf-aedb31601ff9.jpg" width="500" ><br>When you get to last index of the slide, right-clicking will go to the right and you will arrive at index 1 slide with animation effect instead of sliding to all the way to the left side.|
+|Slideshow|<img src="https://user-images.githubusercontent.com/106734133/173249078-89dc6357-49bb-46dd-9ecf-aedb31601ff9.jpg" width="500" ><br>When you get to last index of the slide, right-clicking will go to the right and you will arrive at index 1 slide with animation effect instead of sliding all the way to the left side.|
 |Mouse EventHandler|<img src="https://user-images.githubusercontent.com/106734133/173250452-3a4f356b-2554-46dd-b813-6ed73d51efef.jpg" width="500"><br>The picture in the About section will move towards the user's mouse.|
 |Side Navigation|<img src="https://user-images.githubusercontent.com/106734133/173249502-7974c406-ad9c-459e-b997-6e748cd256ed.jpg"><br>This Feature allows you to move between sections easily. It automatically disappears when you are not hovering over the mouse or scrolling.|
 |Photo Editor|<img src="https://user-images.githubusercontent.com/106734133/173249772-2547285d-120f-4352-a0e0-08dbd2bd96d8.jpg" width="500" ><br>Allows you to change the color and filter of the photo.|
