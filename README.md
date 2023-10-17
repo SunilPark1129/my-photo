@@ -10,7 +10,7 @@ My Photo website is where photography experts capture your unforgettable moments
 |Mouse EventHandler|<img src="https://user-images.githubusercontent.com/106734133/173250452-3a4f356b-2554-46dd-b813-6ed73d51efef.jpg" width="500"><br>The picture in the About section will move towards the user's mouse.|
 |Side Navigation|<img src="https://user-images.githubusercontent.com/106734133/173249502-7974c406-ad9c-459e-b997-6e748cd256ed.jpg"><br>This Feature allows you to move between sections easily. It automatically disappears when you are not hovering over the mouse or scrolling.|
 |Photo Editor|<img src="https://user-images.githubusercontent.com/106734133/173249772-2547285d-120f-4352-a0e0-08dbd2bd96d8.jpg" width="500" ><br>Allows you to change the color and filter of the photo.|
-|Input Form|<img src="https://user-images.githubusercontent.com/106734133/173250101-3515e8d6-2d04-4d8b-ad30-ea0c9f2e2e98.jpg" width="500"><br>A warning sign is displayed if the input is not full or does not fit the required pattern.|
+|Input Form|<img src="https://user-images.githubusercontent.com/106734133/173250101-3515e8d6-2d04-4d8b-ad30-ea0c9f2e2e98.jpg" width="500"><br>A warning sign is displayed if the input is not full or does not fit the requirement.|
 ## Technologies Used
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ## Installation
