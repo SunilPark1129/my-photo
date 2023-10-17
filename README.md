@@ -19,6 +19,6 @@ My Photo website is where photography experts capture your unforgettable moments
 git clone https://github.com/SunilPark1129/my-photo.git
 ```
 ## That can be improved
-- I felt my knowledge on github was lacking. The branch I used only created a temporary branch, made a pull request to the main branch, and deleted the temporary branch. - I'll try to make a pull request using more diverse branches.
+- I felt my knowledge on github was lacking. The branch I used only created a temporary branch, made a pull request to the main branch, and deleted the temporary branch. - My goal is to make a pull request using more diverse branches.
 ## Project Status
 Completed
